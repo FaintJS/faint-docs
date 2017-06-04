@@ -1,0 +1,52 @@
+
+.example {
+  margin: 40px 0;
+  // width: 50%;
+}
+.body {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.demo {
+  padding: 10px;
+}
+
+.code {
+  max-height: 500px;
+  overflow: auto;    
+  transform-origin: 0% 0%;
+  margin-top: 10px;
+  // max-height: 0;
+  height: 0;
+  transition: all .2s easer;
+}
+
+.code.open {
+  height: auto;
+  border-top: 1px dashed #bdbdbd;
+}
+.sourceMarkdown {
+  pre {
+    margin: 0;
+  }
+  code[class*="language"] {
+    border: 0;
+    padding: 0 1em;
+  }
+}
+
+.code-toggle {
+  // position: relative;
+  border-top: 1px solid #f3f3f3;
+  text-align: center;
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.code-toggle:hover {
+  background: #e0efff;
+  color: #4ca0f9;
+}

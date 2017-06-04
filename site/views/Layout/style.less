@@ -1,0 +1,130 @@
+.header {
+  display: flex;
+
+  height: 80px;
+  padding: 0 4%;
+
+  background: #fff;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 10%;
+
+  color: #6ccdf8;
+
+  font-size: 20px;
+}
+
+.navs ul {
+  display: flex;
+}
+
+.navs li a {
+  display: block;
+
+  padding: 0 20px;
+
+  cursor: pointer;
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+
+  font-size: 14px;;
+  line-height: 80px;
+}
+
+.navs li a:hover {
+  border-bottom: 2px solid #2db7f5;
+}
+
+.navs li.isActive a {
+  color: #2db7f5;
+
+  border-bottom: 2px solid #2db7f5;
+
+  font-weight: 900;
+}
+
+.main {
+  display: flex;
+
+  margin: 20px 4%;
+  padding: 20px 0;
+
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.aside {
+  width: 10%;
+
+  border-right: 1px solid #f5f5f5;
+
+  line-height: 1.5;
+
+  li a {
+    position: relative;
+
+    display: inline-block;
+
+    width: 100%;
+    height: 40px;
+    padding-left: 20%;
+
+    cursor: pointer;
+    transition: .1s;
+
+    font-size: 14px;;
+    line-height: 40px;
+    color: #666;
+
+    &:visited {
+      color: #666;
+    }
+    
+    &:hover {
+      color: #fff;
+      background-color: #6ccdf8;
+    }
+
+    &.isCurrent {
+      color: #6ccdf8;
+      &::after {
+        position: absolute;
+        top: 0;
+        right: -1px;
+        bottom: 0;
+
+        display: block;
+
+        width: 2px;
+
+        content: '';
+
+        background: #6ccdf8;
+      }
+    }
+  }
+}
+
+.aside li a:hover{
+  color: #fff;
+}
+
+.page {
+  display: inline-block;
+
+  width: 90%;
+  padding: 0 16px;
+  // min-height: 800px;
+}
+
+.footer {
+  height: 40px;
+
+  padding: 10px 4%;
+
+  background-color: #fff;
+}
